@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --first: #31343D;
+  --second: #92ccce;
+  --third: #445877;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--first);
+}
+
+header h1{
+    color: var(--third);
+    background-color: var(--second);
+    padding: 5px 1% 5px 6%;
+    font-size: 4vw;
+    line-height: 1;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+    color: var(--second);
+    background-image: linear-gradient(280deg, var(--second) 0%, var(--second) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    font-size: 1.4em;
+    transition: all .25s ease-in;
+}
+
+nav a:hover {
+    background-size: 100% 100%;
+    color: var(--first);
+}
+
+.hero-banner {
+    background-image: url("https://i.picsum.photos/id/94/1200/800.jpg?blur=5&hmac=61I1TnrISbEAGwIlYk51t9feWSw0hx_14XqKNK2kTR0");
+    min-height: 30vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    padding: 2% 6%;
+}
+
+.hero-banner div {
+    flex: 0 0 90%;
+}
+
+.hero-banner h2 {
+    background-color: var(--second);
+    color: var(--third);
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    display: inline;
+}
